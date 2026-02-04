@@ -1,0 +1,27 @@
+services:
+  api:
+    container_name: fumo-api-dev
+    build:
+      context: .
+      dockerfile: Dockerfile
+    working_dir: /app
+    volumes:
+      - .:/app
+    env_file:
+      - .env
+    ports:
+      - "8080:8080"
+
+
+  db:
+    container_name: fumo-db-dev
+    image: docker.io/library/postgres:18
+    env_file:
+      - .env
+    volumes:
+      - pgdata:/var/lib/postgresql:Z
+    ports:
+      - "5432:5432"
+
+volumes:
+  pgdata:
