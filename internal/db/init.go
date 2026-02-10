@@ -55,18 +55,25 @@ func initSchemas(ctx context.Context, pool *pgxpool.Pool) error {
 			END IF;
 		END $$;`,
 		`CREATE TABLE IF NOT EXISTS users (
-		id SERIAL PRIMARY KEY,
-		discord_id TEXT UNIQUE NOT NULL,
-		name TEXT NOT NULL,
-		role user_role NOT NULL
-	);`,
+			id SERIAL PRIMARY KEY,
+			discord_id TEXT UNIQUE NOT NULL,
+			name TEXT NOT NULL,
+			role user_role NOT NULL
+		);`,
 		`CREATE TABLE IF NOT EXISTS tokens (
-		id SERIAL PRIMARY KEY,
-		user_id INT NOT NULL REFERENCES users(id) ON DELETE CASCADE,
-		token_hash TEXT UNIQUE NOT NULL,
-		created_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
-		revoked_at TIMESTAMPTZ NULL
-	);`,
+			id SERIAL PRIMARY KEY,
+			user_id INT NOT NULL REFERENCES users(id) ON DELETE CASCADE,
+			token_hash TEXT UNIQUE NOT NULL,
+			created_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
+			revoked_at TIMESTAMPTZ NULL
+		);`,
+		`CREATE TABLE IF NOT EXISTS fumo_media (
+			id SERIAL PRIMARY KEY,
+			fumo_ids INT[] NOT NULL,
+			description TEXT NULL,
+			media_url TEXT NOT NULL,
+			approved BOOLEAN NOT NULL DEFAULT FALSE
+		);`,
 	}
 	for i, q := range queries {
 		_, err := tx.Exec(ctx, q)

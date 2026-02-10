@@ -1,0 +1,202 @@
+[
+        {
+                "id": 0,
+                "name": "unknown",
+                "full_name": "Unknown"
+        },
+        {
+                "id": 1,
+                "name": "reimu",
+                "full_name": "Hakurei Reimu"
+        },
+        {
+                "id": 2,
+                "name": "marisa",
+                "full_name": "Kirisame Marisa"
+        },
+        {
+                "id": 3,
+                "name": "sakuya",
+                "full_name": "Izayoi Sakuya"
+        },
+        {
+                "id": 4,
+                "name": "remilia",
+                "full_name": "Remilia Scarlet"
+        },
+        {
+                "id": 5,
+                "name": "patchouli",
+                "full_name": "Patchouli Knowledge"
+        },
+        {
+                "id": 6,
+                "name": "alice",
+                "full_name": "Alice Margatroid"
+        },
+        {
+                "id": 7,
+                "name": "flandre",
+                "full_name": "Flandre Scarlet"
+        },
+        {
+                "id": 8,
+                "name": "sanae",
+                "full_name": "Kochiya Sanae"
+        },
+        {
+                "id": 9,
+                "name": "cirno",
+                "full_name": "Cirno"
+        },
+        {
+                "id": 10,
+                "name": "suwako",
+                "full_name": "Moriya Suwako"
+        },
+        {
+                "id": 11,
+                "name": "youmu",
+                "full_name": "Konpaku Youmu"
+        },
+        {
+                "id": 12,
+                "name": "yuyuko",
+                "full_name": "Saigyouji Yuyuko"
+        },
+        {
+                "id": 13,
+                "name": "meiling",
+                "full_name": "Hong Meiling"
+        },
+        {
+                "id": 14,
+                "name": "chen",
+                "full_name": "Chen"
+        },
+        {
+                "id": 15,
+                "name": "ran",
+                "full_name": "Yakumo Ran"
+        },
+        {
+                "id": 16,
+                "name": "yukari",
+                "full_name": "Yakumo Yukari"
+        },
+        {
+                "id": 17,
+                "name": "kaguya",
+                "full_name": "Houraisan Kaguya"
+        },
+        {
+                "id": 18,
+                "name": "mokou",
+                "full_name": "Fujiwara no Mokou"
+        },
+        {
+                "id": 19,
+                "name": "satori",
+                "full_name": "Komeiji Satori"
+        },
+        {
+                "id": 20,
+                "name": "koishi",
+                "full_name": "Komeiji Koishi"
+        },
+        {
+                "id": 21,
+                "name": "reisen",
+                "full_name": "Reisen Udongein Inaba"
+        },
+        {
+                "id": 22,
+                "name": "tewi",
+                "full_name": "Inaba Tewi"
+        },
+        {
+                "id": 23,
+                "name": "kokoro",
+                "full_name": "Hata no Kokoro"
+        },
+        {
+                "id": 24,
+                "name": "kasen",
+                "full_name": "Ibaraki Kasen"
+        },
+        {
+                "id": 25,
+                "name": "aya",
+                "full_name": "Shameimaru Aya"
+        },
+        {
+                "id": 26,
+                "name": "hatate",
+                "full_name": "Himekaidou Hatate"
+        },
+        {
+                "id": 27,
+                "name": "tenshi",
+                "full_name": "Hinanawi Tenshi"
+        },
+        {
+                "id": 28,
+                "name": "shion",
+                "full_name": "Yorigami Shion"
+        },
+        {
+                "id": 29,
+                "name": "yuuka",
+                "full_name": "Kazami Yuuka"
+        },
+        {
+                "id": 30,
+                "name": "momiji",
+                "full_name": "Inubashiri Momiji"
+        },
+        {
+                "id": 31,
+                "name": "eirin",
+                "full_name": "Eirin Yagokoro"
+        },
+        {
+                "id": 32,
+                "name": "rumia",
+                "full_name": "Rumia"
+        },
+        {
+                "id": 33,
+                "name": "eiki",
+                "full_name": "Shiki Eiki, Yamaxanadu"
+        },
+        {
+                "id": 34,
+                "name": "nitori",
+                "full_name": "Kawashiro Nitori"
+        },
+        {
+                "id": 35,
+                "name": "joon",
+                "full_name": "Yorigami Joon"
+        },
+        {
+                "id": 36,
+                "name": "renko",
+                "full_name": "Usami Renko"
+        },
+        {
+                "id": 37,
+                "name": "miko",
+                "full_name": "Toyosatomimi no Miko"
+        },
+        {
+                "id": 38,
+                "name": "junko",
+                "full_name": "Junko"
+        },
+        {
+                "id": 39,
+                "name": "keiki",
+                "full_name": "Haniyasushin Keiki"
+        }
+]
