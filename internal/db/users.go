@@ -19,12 +19,6 @@ const (
 	UserRoleUser       UserRole = "user"
 )
 
-type UserDataRegister struct {
-	DiscordID string
-	Name      string
-	Role      *UserRole
-}
-
 type UserData struct {
 	DiscordID string
 	Name      string
@@ -37,19 +31,14 @@ func newUsersRepo(p *pgxpool.Pool) *UsersRepo {
 	}
 }
 
-func (ur *UsersRepo) registerUser(ctx context.Context, userData UserDataRegister) error {
-	role := UserRoleUser
-	if userData.Role != nil {
-		role = *userData.Role
-	}
-
+func (ur *UsersRepo) registerUser(ctx context.Context, userData UserData) error {
 	_, err := ur.pool.Exec(
 		ctx,
 		`INSERT INTO  users (discord_id, name, role)
 		VALUES ($1, $2, $3)`,
 		userData.DiscordID,
 		userData.Name,
-		role,
+		userData.Role,
 	)
 	if err != nil {
 		return fmt.Errorf(
