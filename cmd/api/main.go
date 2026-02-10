@@ -2,10 +2,8 @@ package main
 
 import (
 	"log"
-	"net/http"
 
 	"fumo-api/internal/app"
-	"fumo-api/internal/db"
 )
 
 func main() {
@@ -13,15 +11,11 @@ func main() {
 		Addr: ":8080",
 	})
 
-	a.AddHandler("/test", func(w http.ResponseWriter, r *http.Request) {
-		w.WriteHeader(http.StatusOK)
-		w.Write([]byte("foo bar"))
-	})
+	a.RegisterRoutes()
+	log.Printf("Listening at port \"%s\"", a.Config.Addr)
 
-	log.Printf("At port \"%s\"", a.Config.Addr)
-
-	db.NewDb()
-
-	a.StartListening()
-
+	err := a.StartListening()
+	if err != nil {
+		log.Fatalf("Failed to launch application: %v", err)
+	}
 }
